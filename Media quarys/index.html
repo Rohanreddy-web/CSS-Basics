@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quarys</title>
+    <style>
+
+        .box1 {
+            border: 2px solid black;
+            padding: 5px;
+            height: 16vh;
+            width: 16vw;
+            margin: 20px;
+            background-color: aqua;
+            color: red;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            display: inline-block;
+            
+
+        }
+        
+
+        .box2 {
+            border: 2px solid black;
+            padding: 5px;
+            height: 16vh;
+            width: 16vw;
+            margin: 20px;
+            background-color: blueviolet;
+            color: red;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .box3 {
+            border: 2px solid black;
+            padding: 5px;
+            height: 16vh;
+            width: 16vw;
+            margin: 20px;
+            background-color: cadetblue;
+            color: red;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        @media    only screen and (max-width:445px){
+            body{
+                background-color: blue;
+            }
+        }
+        @media only screen and (orientation :portrait) {
+            body{
+                border:5px solid black;
+
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box1">box1</div>
+        <div class="box2">box1</div>
+        <div class="box3"> box1</div>
+    </main>
+    
+
+</body>
+
+</html>

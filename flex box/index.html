@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flex box</title>
+    <style>
+         main .cont{
+            border: 2px solid black;
+            display: flex;
+            height: 60vh;
+            justify-content:space-around;
+            align-items:flex-end;
+           flex-direction: row;
+            flex-wrap: wrap;
+            background: linear-gradient(white,blue);
+            background-attachment:fixed;
+            border-radius: 50px;
+            gap: 10px 30px;
+        }
+        .items{
+            width: 5vw;
+            height: 6vh;
+          ?
+           /* flex-grow: 20;*/
+            /*flex-shrink: 2;*/
+          align-self:  baseline;
+
+        }
+        .box6{
+            order: 1;
+        }
+        .box3{
+            order: 2;
+        }
+        .box2{
+            order: 3;
+        }
+        .box1{
+            order: 3;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <main>
+    <div class="cont">
+        <div class="items box   box6" ><button> hello you1</button></div>
+        <div class="items box3"><button>hello2 </button></div>
+        <div class="items box2"><button> hello you3</button></div>
+        <div class="items box1"><button>hello me4</button></div>
+      
+      
+    </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors </title>
+    <style>
+        div{
+            color: blueviolet;
+            background-color: antiquewhite;
+        }
+        .class1{
+            color: brown;
+            background-color: blanchedalmond;
+    
+        }
+        #di1{
+            background-color:aqua;
+            color: black;
+        }
+        /*imidate child selector*/
+     div> p{
+            background-color: aqua;
+            color: black;
+        }
+        /*Decndent selector*/
+           div p{
+             background-color:blue;
+             color:red;
+        }
+       
+       
+        /* universal selector*/
+        *{
+            margin: 0px;
+        }
+        /* psudo selectors*/
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color:blueviolet;
+        }
+        a:active{
+            background-color: green;
+        }
+        a:hover{
+            background-color: rgb(64, 0, 255);
+        }
+        p:first-child{
+            background-color: yellow;
+        }
+        /* n child selectors*/
+        .c2:nth-child(1){
+            background-color:black ;
+
+        }
+    
+
+     
+
+
+    </style>
+</head>
+<body>
+    <h1>Selectors in css</h1>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam similique dolorum eum perferendis exercitationem, sed, ipsum animi consectetur sint dignissimos, aut id at optio minima nulla nemo rerum veniam.</p>
+        <p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo eveniet quo sint soluta numquam nesciunt consequatur id praesentium dolorem. Provident harum iure tempore sapiente repellendus. Perferendis impedit qui quasi?</label></p>
+    </main>
+    <div>
+    <p>jnknknkLorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, distinctio officia. Cumque velit accusantium rem nulla excepturi vero eligendi doloremque libero amet dolorem!</p>
+    <span>
+    <p class="class2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fugiat, nam iste quibusdam voluptas quae maxime quod iure inventore minima.</p> </span>
+    </div>
+    <h2 class="class1"> wellcome to h2</h2>
+    <p id="di1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente quas error quasi consequuntur? Aliquam eligendi beatae quam distinctio itaque.</p>
+    <a href="https://www.gethub.com"> <h1>link.com----</h1></a>
+    <a href="">click me</a>
+    <div class="c2"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veniam ame Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum doloribus dolore porro consectetur, magni minus est esse aspernatur unde illo veritatis magnam delectus. Distinctio ea enim, quidem soluta incidunt aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint obcaecati atque enim amet alias! Voluptatibus illum expedita sapiente vero velit dolorem, sunt reprehenderit, enim ipsum error sint, perferendis esse totam. </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, commodi. Iusto cum delectus unde, odio dolores voluptas, quia adipisci et commodi architecto ratione facilis! Quisquam repudiandae dignissimos mollitia ipsum optio ad facere, eaque iure eum adipisci. Ratione illo quo illum veniam error natus repellendus cupiditate veritatis soluta, numquam vitae, voluptate praesentium provident. Sunt, vel itaque.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, commodi corporis. Ullam ducimus quod aut? Laudantium amet error minima sequi dolor illum.</p></div>
+<div class="div1" data-folder="data"></div>
+<script>
+    let a=document.querySelector("div1")
+    const v=a.dataset.folder
+    console.log(v)
+</script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="div1" data-folder="/data"></div>
+<script>
+    let a=document.querySelector(".div1")
+    const v=a.dataset.folder
+
+    console.log(v)
+</script>
+</body>
+</html>

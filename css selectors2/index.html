@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        .boxs::before {
+            /*psudo element selecters*/
+            content: "welcome";
+            color: red;
+            font-size: 50px;
+        }
+
+        .boxs::after {
+            content: "wellcome";
+            color: blue;
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter {
+            font-size: 26px;
+            color: peru
+        }
+
+        input::placeholder {
+            color: white;
+            background-color: rgba(230, 24, 103, 0.311);
+            margin: 0px;
+
+
+
+        }
+        [data]{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxs">
+        <div class="box">Rohan reddy</div>
+        <div class="box"> is a good boy</div>
+        <div class="box" data="1234"> hello</div>
+    </div>
+    <input type="text" name="name" placeholder="enter your name" required autofocus>
+
+</body>
+
+</html>

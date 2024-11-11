@@ -1,0 +1,18 @@
+ol li{
+    color: red;
+z-index: 1;
+}
+button{
+    background-color: aqua;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 2px;
+
+}
+body{
+    background-image: url(image20.jpg);
+    background-repeat: no-repeat;
+    background-size: 200vw;
+    background-position: center center ;
+   
+}

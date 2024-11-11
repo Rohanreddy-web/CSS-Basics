@@ -1,0 +1,167 @@
+img {
+  width: 190px;
+}
+
+.box ul li {
+  list-style: none;
+  font-weight: 100;
+  font-size: 18px;
+  font-style: normal;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  gap: 0px 50px;
+  flex-wrap: wrap;
+}
+
+#id {
+  position: relative;
+  right: 50px;
+  top: -15px;
+}
+
+main .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+main .fix1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 550;
+}
+
+main .pp {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.b1 {
+  position: relative;
+  top: 20px;
+  padding: 20px;
+  left: 490px;
+  background-color: #00b6d1;
+  color: aliceblue;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgba(111, 106, 106, 0.863);
+  cursor: pointer;
+  display: flex;
+}
+
+.logo img {
+  position: relative;
+  top: 80px;
+  left: 60px;
+  width: 20vw;
+}
+
+.items {
+  height: 30vh;
+  width: 25vw;
+  position: relative;
+  top: 90px;
+  left: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(124, 115, 115);
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 3px;
+  background-color: lightgreen;
+  color: aliceblue;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px rgb(124, 115, 115);
+  cursor: pointer;
+}
+
+footer {
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+}
+
+.con1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.con1 input {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 6px;
+  position: relative;
+  top: 50px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.329);
+  font-weight: 600;
+  color: black;
+  box-shadow: 0px 0px 10px rgb(124, 115, 115);
+}
+
+.spa button {
+  position: relative;
+  left: 62%;
+  bottom: 58px;
+  background-color: red;
+}
+
+input::placeholder {
+  color: black;
+}
+::selection {
+  background-color: rgba(86, 13, 154, 0.74);
+  color: whitesmoke;
+}
+@media only screen and (max-width: 945px) {
+  .cont {
+    flex-direction: column;
+  }
+  .con1 input {
+    flex-direction: column;
+  }
+  .spa button {
+    flex-direction: column;
+  }
+  .con1 input {
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+  }
+  main .pp {
+    flex-direction: column;
+  }
+  .b1 {
+    flex-direction: column;
+  }
+}
+
+

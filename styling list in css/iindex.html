@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        nav ul li{
+            /* list-style:devanagari;*/
+            list-style-position: inside;
+            border:  2px solid black;
+            list-style-type:"❤️";
+            padding: 10px;
+        
+           
+        }
+        li:nth-child(1){
+            background-color:orange;
+            
+        }
+         li:nth-child(3){
+            background-color: white;
+        }
+        ul :nth-child(3){
+           background-color: green;
+        }
+        li::after{
+            content: "";
+            height: 120px;
+            width: 60px;
+            border: 2px solid red;
+            animation: anime 3s ease-in-out infinite alternate-reverse;
+
+        }
+        @keyframes anime {
+            50%{
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li> Home</li>
+        <li> About</li>
+        <li> Contant</li>
+    </ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* specificity =10*/
+        .red {
+            color: aqua;
+        }
+
+        /* specificity =10*/
+        .blue {
+            color: rgb(255, 149, 20);
+        }
+
+        /* specificity=10*/
+        .yellow {
+            color: rgba(139, 24, 28, 0.918);
+           /* text-shadow: 6px 6px 10px  black;*/
+        }
+
+            /* specificity=10*/
+           [data] {
+                color: red;
+            }
+             [data] {
+                color:blue;
+            }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, minima?</h1>
+        <p class="red blue yellow" id="id" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            pariatur
+            temporibus
+            harum optio facilis saepe commodi praesentium illo, aliquam, cumque facere magnam dolorum?</p>
+            <p data="x"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi veritatis harum illum quod accusamus
+                cumque ducimus quae reiciendis quas veniam ipsum at deleniti eveniet, blanditiis perferendis delectus laboriosam
+                architecto!</p>
+
+    </div>
+</body>
+
+</html>

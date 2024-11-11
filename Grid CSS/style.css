@@ -1,0 +1,36 @@
+.cont {
+  border: 2px solid black;
+  height: 1500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* place-content:  center; */
+  background-color:antiquewhite;
+  overflow:hidden
+  
+ 
+ }
+  .box{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self:start;
+    align-self: end;
+}
+.box1{
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+}  
+
+.items {
+  height: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  border: 2px solid black;
+  width: 30px;
+  
+  
+}

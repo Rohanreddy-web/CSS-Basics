@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .se{
+            display: flex;
+            width: 80vw;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+        }
+        .img2{
+            border: 2px solid red;
+            position: relative;
+            
+        }
+        .img2 video{
+            position: absolute;
+            top: 0px;
+           right: 50px;
+        }
+        img{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="se">
+        <div class="img2">
+            <img src="tv.jpg" alt="" width="500">
+            <video src="video2.mp4" muted loop autoplay controls width="360" height="360"> </video>
+        </div>
+    </div>
+</body>
+
+</html>

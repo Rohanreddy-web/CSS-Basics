@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css varibles
+    </title>
+    <style>
+        :root {
+            /*globle varibles*/
+            --rohancolor1: rgb(207, 207, 228);
+            --rohanseccolor: rgba(110, 110, 86, 0.616);
+            --rohanopa: 0.6;
+            --rohanpadd: 65px;
+            --roback: rgb(3, 122, 234);
+        }
+    
+
+        body {
+            background-color: var(--rohanseccolor);
+        }
+
+        div ul li {
+            background-color: aqua;
+            list-style-position: inside;
+            border: 2px solid var(--rohancolor1);
+            padding: var(--rohanpadd);
+            display: inline-block;
+            --u1backrohan: rgb(36, 96, 124);
+            background-color: var(--u1backrohan)
+        }
+
+        div p {
+            background: linear-gradient(rgb(86, 176, 86), white);
+            --rohanpadd2: 60px;
+                                /*local varible*/
+            padding: var(--rohanpadd2);
+            opacity: var(--rohanopa);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="box">
+            <li>Home</li>
+            <li>About</li>
+            <li>media</li>
+
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore dolor veritatis facilis sequi
+            asperiores, hic sapiente molestias libero odio, velit doloribus voluptates nemo tenetur quibusdam officia
+            repellat. Pariatur rerum tempora ducimus blanditiis et sapiente impedit quibusdam, libero consequatur
+            inventore maiores sunt. Earum, deleniti sit ullam magni natus praesentium. Quis tenetur saepe natus
+            repudiandae earum iusto necessitatibus, deleniti debitis doloremque consequatur dicta quas sint dolor
+            blanditiis?</p>
+    </div>
+
+</body>
+
+</html>

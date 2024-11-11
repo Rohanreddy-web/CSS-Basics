@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL Transform prperties</title>
+    <style>
+        .cont {
+            display: flex;
+            width: 80vw;
+            height: 80vh;
+            position: relative;
+            top: 50px;
+            gap: 60px 60px;
+            justify-content: space-around;
+            align-content: center;
+            flex-flow: column wrap;
+        }
+
+        body {
+            background-image: url(o.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .item {
+            width: 100px;
+            height: 80px;
+            text-align: center;
+            background: linear-gradient(violet, rgba(61, 61, 159, 0.753));
+
+            box-shadow: 11px 10px 10px rgba(18, 18, 18, 0.845);
+            color: rgb(12, 12, 12);
+            font-size: 19px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-style: italic;
+            font-weight: 600;
+            cursor: pointer;
+             transition: transform  2s  ease-in-out;
+           
+        }
+
+        .box {
+            width: 100px;
+            height: 80px;
+            background-color: red;
+        }
+
+        .item1:hover {
+            transform: rotateX(65deg);
+        }
+
+        .item2:hover {
+            transform: scale(1.6);
+        }
+
+        .item3:hover {
+            transform: skewX(45deg);
+        }
+
+        .item4:hover {
+            transform: rotateY(56deg);
+          
+        }
+
+        .item5:hover {
+            transform: scaleX(1.8);
+        }
+
+        .item6:hover {
+            transform: skewY(45deg);
+        }
+
+        .item7:hover {
+            transform: rotatez(56deg);
+        }
+
+        .item8:hover {
+            transform: ScaleY(1.8);
+        }
+
+        .item9:hover {
+             transform: translateX(66%) translateY(50%) rotate(0.5turn);
+               
+
+        body::before {
+            content: "TRANSFORM PLAY .COM";
+            color: rgba(183, 110, 14, 0.797);
+            font-size: 24px;
+            font-weight: 800;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cont">
+        <div class="item item1">Rotate 65 deg</div>
+        <div class="item item2">Scale 1.8</div>
+        <div class="item item3">SkewX 45 deg</div>
+        <div class="item item4">RotateX 56 deg</div>
+        <div class="item item5">ScaleX 1.8</div>
+        <div class="item item6">skewY 45 deg</div>
+        <div class="item item7">RotateZ 65 deg</div>
+        <div class="item item8">ScaleY 1.8</div>
+        <div class="item item9">Rotate 3D</div>
+    </div>
+</body>
+</html>

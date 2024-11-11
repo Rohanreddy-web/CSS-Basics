@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .ball {
+            width: 80vw;
+            height: 80vh;
+            margin: auto;
+            position: relative;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-end;
+            box-shadow: 8px 8px 10px 5px rgba(97, 86, 86, 0.573);
+            background-color: black
+        }
+
+        .bo {
+            width: 110px;
+            height: 110px;
+            border: 2px solid blue;
+            border-radius: 100px;
+            background-color: red;
+            position: absolute;
+            animation: xAxis 2s alternate infinite, yAxis 1s ease-out infinite alternate;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        @keyframes xAxis {
+            0% {
+                left: 10%;
+                background-color: blue;
+            }
+
+            100% {
+                left: 70%;
+
+            }
+        }
+
+        @keyframes yAxis {
+            0% {
+                bottom: 0%;
+                background-color: blueviolet;
+            }
+
+            100% {
+                bottom: 80%;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball">
+        <div class="bo">
+        </div>
+    </div>
+</body>
+
+</html>
